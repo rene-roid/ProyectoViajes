@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,600;0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+.GoUp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background-color: #f5f5f5;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transition: background-color 1s;
+    cursor: pointer;
+
+    z-index: 1;
+}
+
+/* SECCIÓN 1 */
+/* #one {
+    display: none;
+} */
+
+header {
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    
+    color: rgb(255, 255, 255);
+
+    /* Stay always at the top of the screen*/
+    position: fixed;
+    top: 0em;
+
+    /* Place item on top of everything */
+    z-index: 1;
+}
+
+.FistPage {
+    /* Background image fills the initial screen view */
+    background-size: cover;
+    background-image: url('/img/playa.jpg');
+
+    color: white;
+
+    width: 100%;
+    height: 100vh;
+
+    /* Center the image */
+    background-position: center;
+
+    /* Put the image at the top of the screen */
+    background-repeat: no-repeat;
+}
+
+.containerHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.leftHeader {
+    padding: 1em;
+}
+
+.rightHeaderButton {
+    /* Change image color to white */
+    filter: invert(1);
+    margin: 1em;
+}
+.rightHeaderButton:hover {
+    cursor: pointer;
+}
+
+#rightHeader {
+    /* Hide left header */
+    display: none;
+
+    background-color: rgba(255, 255, 255);
+    width: 75%;
+    height: 100%;
+    
+    color: rgb(0, 0, 0);
+
+    /* Stay always at the top of the screen*/
+    position: fixed;
+    top: 0em;
+
+    /* Put element on the right */
+    right: 0;
+
+    /* Place item on top of everything */
+    z-index: 2;
+
+    /* Add shadow */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* JS MENU */
+.rightHeaderContent {
+    margin: 3em;
+    color: #14505b;
+
+    /* Remove link style */
+    text-decoration: none;
+}
+
+.Inicio, .Nosotros, .Descubre, .Lugares {
+    color: #14505b;
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+    /* Text caps lock */
+    text-transform: uppercase;
+}
+
+.Inicio a, .Nosotros a, .Descubre a, .Lugares a { 
+    text-decoration: none;
+    color: #14505b; 
+}
+
+.Inicio a:visited, .Nosotros a:visited, .Descubre a:visited, .Lugares a:visited { 
+    text-decoration: none;
+    color: #14505b; 
+}
+
+.Inicio a:hover, .Nosotros a:hover, .Descubre a:hover, .Lugares a:hover { 
+    text-decoration: none;
+    color: #14505b;
+    
+    /* Underline text */
+    text-decoration: underline;
+
+}
+
+#closeBurger {
+    position: fixed;
+    
+    /* Place element to the right of the screen */
+    right: 1em;
+    top: 1em;
+}
+
+/* On hover closeBurger mouse pointer */
+#closeBurger:hover {
+    cursor: pointer;
+}
+
+/* END JS MENU */
+
+a { 
+    text-decoration: none; }
+a:hover { text-decoration: none; }
+a:focus { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover, a:active { text-decoration: none; }
+
+.FirstPageBody {
+    display: block;
+    justify-content: left;
+    width: 100%;
+    height: 100%;
+    
+    padding-top: 15em;
+    margin-left: 1em;
+}
+
+.lugaresFlip {
+    font-size: 3em;
+}
+
+/* #14505b */
+.AdelanteBtn {
+    /* Make the button a rectangle */
+    border-radius: 0;
+    border: none;
+    background-color: #14505b;
+    color: white;
+
+    /* Change the button size */
+    width: 10em;
+    height: 3em;
+
+    /* Center the button */
+    margin: auto;
+    margin-top: 2.5em;
+
+}
+.AdelanteBtn:hover {
+    cursor: pointer;
+}
+
+.AdelanteBtn a:visited {
+    color: white;
+}
+
+
+/* SECCIÓN 2 */
+.SecondPage {
+    /* Display everything on the center */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    color: #14505b;
+}
+
+.SPLTitle {
+    margin-top: 3em;
+    font-size: 1.5em;
+    padding-bottom: 2em;
+}
+
+.SPLBody {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.SPLTable {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    width: 100%;
+    height: 100%;
+
+    margin-top: 1.5em;
+}
+
+.SPLImages1, .SPLImages2{
+    width: auto;
+    height: 250px;  
+    margin: 1em;
+}
+
+.SPLImages2 {
+    height: 300px;
+}
+
+/* SECCIÓN 3 */
+
+.ThirdPage {
+    height: 60vh;
+
+
+}
+
+.DesSitiosIncreibles, .eligeTuDestino {
+    padding-top: 4em;
+
+    /* Place the text iin the center */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+    color: #14505b;
+    font-size: 1.5em;
+
+    width: 100%;
+}
+
+
+.tableSlider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    /* width: 100%;
+    height: 100%;
+    
+    margin-top: 1.5em; */
+}
+
+/* .tblSlider {
+    width: 100%;
+}
+
+.tblData {
+    width: 30%;
+    background-color: #f5f5f5;
+} */
+
+.rightImage, .leftImage {
+    width: 70%;
+    height: auto;
+    
+    /* align items to the center */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+.ImageSlider {
+    width: 100%;
+    height: auto;
+
+    margin: .5em auto;
+
+    /* overflow: hidden; */
+    position: relative;
+
+    position: relative;
+    width: 80%;
+    top: 0;
+    
+}
+
+img {
+    width: 100%;
+}
+.fotos {
+    display: none;
+    width: 15em;
+}
+
+.fotos:first-child {
+    display: block;
+    
+}
+
+
+.texto {
+    position: relative;
+    bottom: 3.5em;
+    right: 6em;
+
+    color: white;
+    text-align: center;
+}
+
+/* SECCIÓN 4 */
+.FourthPage {
+    height: 100vh;
+}
+
+.tableDestinos {
+    position: relative;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.destino {
+    padding: 0.5em;
+}
+
+.Rating, .destinoNombre {
+    color: white;
+}
+
+.Rating {
+    position: relative;
+    top: 2em;
+    left: 0.5em;
+}
+
+.smolStar {
+    width: 1em;
+    height: 1em;
+    margin-right: 0.5em;
+    /* Change image color */
+    filter: invert(1);
+}
+
+.destinoNombre {
+    position: relative;
+    bottom: 2em;
+    left: 0.5em;
+}
+
+/* SECTION 5 */
+/* Put footerLeft on the left and footerRight on the right */
+.footer {
+    display: flex;
+    padding: 2em;
+}
+
+.footerLeft {
+    width: 70%;
+    left: 0;
+}
+
+.footerRight {
+    width: 30%;
+    right: 1em;
+}
+
+.footerTitle {
+    color: #14505b;
+    font-weight: bold;
+}
+
+.footerBody {
+    color: #6696ad;
+}
+
+.footerBody a:visited {
+    color: #6696ad;
+}
+
+/* #6696ad */
+
+/* Media query bigger than 768px */
+@media screen and (min-width: 768px) {
+    .rightHeader {
+        /* Hide left header */
+        display: block;
+    }
+
+    .footer {
+        margin-top: 70vh;
+        padding: 10em;
+    }
+
+    .rightHeaderButton {
+        display: none;
+    }
+
+}
